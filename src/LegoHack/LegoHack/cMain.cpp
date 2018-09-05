@@ -75,7 +75,6 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR lpCmdLine, in
 	GetSystemInfo(&sysinfo);
 
 	//Create threads
-	//CreateThread(0, 0, (LPTHREAD_START_ROUTINE)Thread::CheatUpdate, 0, 0, 0);
 	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)Thread::ReadUpdate, 0, 0, 0);
 	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)Thread::EntityUpdate, 0, 0, 0);
 	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)Thread::UpdateWinPosition, 0, 0, 0);
@@ -179,19 +178,10 @@ namespace Thread {
 				//Sleep(1);
 			}
 			//std::cout << "Players found: " << std::dec << pentindex << std::endl;
-
 			//std::cout << "Finished Pass." << std::endl;
 
 
 			Sleep(1048);
-		}
-	}
-
-	void CheatUpdate() {
-		while (true) {
-			//Read MVP Matrix
-
-			//Sleep(1);
 		}
 	}
 
@@ -277,7 +267,6 @@ namespace Thread {
 				for (int pid = 0; pid < 2000; pid++) {
 					if (dwBaseHumanoid[ii] == dwBaseHumanoid[pid] && pid != ii) {
 						dwBaseHumanoid[pid] = 0x0;
-						//dwBasePlayer_Position[pid][0] = D3DXVECTOR3{ 0.0f, 0.0f, 0.0f };
 					}
 				}
 			}
