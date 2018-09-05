@@ -1,9 +1,8 @@
-
-![alt text](https://i.imgur.com/ZdvBGvB.png)
-
 # LegoHack-POC-
   A proof of concept external esp for Roblox. Using signature scans to find player bases and only thing needed to update the hack
 is the offset to the viewmatrix.
+
+![alt text](https://i.imgur.com/ZdvBGvB.png)
 
 ## Why?
   I'm not really interested in this game much itself but I've noticed that there are very little cheats for it despite a surprisingly 
